@@ -1,4 +1,10 @@
 # cSCM
+|  |  |
+|--|--|
+|Lincense|[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/ctection/cSCM/blob/master/LICENSE)|
+|Support |[![Discord](https://img.shields.io/discord/554675435309629451?logo=discord)](https://discord.gg/eaZseHT2F7)|
+|Downloads|[![Github all releases](https://img.shields.io/github/downloads/ctection/cSCM/total.svg)](https://GitHub.com/ctection/CPermManager/releases/)|
+|Build|![GitHub Workflow Status](https://img.shields.io/github/workflow/status/ctection/cSCM/Gradle)|
 ### Simple Collection Mapping (SCM) Parser
 
 We invented this Data Format to allow advanced Memory Transfers via Networked Sockets.
@@ -18,3 +24,27 @@ This is the Basic SCM Syntax Explained:
 `:`, `,` and `;` can be escaped to not be recognized as operational characters.
 
 Using SCM instead of JSON can result in lower Memory Usage and Data Usage when transferring via Networked Socket, therefore reducing transferring time and allowing for a cleaner Handover.
+
+## Download
+|  |  |
+|--|--|
+|Latest Github Release|[![GitHub release](https://img.shields.io/github/release/ctection/cSCM.svg)](https://GitHub.com/ctection/cSCM/releases/)|
+|Maven Central|[![Maven Central](https://img.shields.io/maven-central/v/com.ctection/cSCM?color=gree)](https://search.maven.org/artifact/com.ctection/cSCM/) |
+|Commits|![GitHub commits since latest release (by SemVer)](https://img.shields.io/github/commits-since/ctection/cSCM/1.1.0?color=gree&sort=date)|
+**Be sure to replace VERSION with the version shown above!**
+#### Maven
+```XML
+<dependencies>
+	<dependency>
+	  <groupId>com.ctection</groupId>
+	  <artifactId>cSCM</artifactId>
+	  <version>VERSION</version>
+	</dependency>
+</dependencies>
+```
+#### Gradle
+```gradle
+dependencies {
+	implementation 'com.ctection:cSCM:VERSION'
+}
+```
