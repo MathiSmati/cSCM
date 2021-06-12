@@ -11,7 +11,7 @@ plugins {
     id 'io.codearte.nexus-staging' version '0.11.0'
 }
 group 'com.ctection'
-version '1.0.4'
+version '1.1.0'
 
 repositories {
     mavenCentral()
@@ -19,7 +19,7 @@ repositories {
 apply plugin: 'com.bmuschko.nexus'
 archivesBaseName = 'cSCM'
 group = "com.ctection"
-version = "1.0.4"
+version = "1.1.0"
 
 modifyPom {
     project {
