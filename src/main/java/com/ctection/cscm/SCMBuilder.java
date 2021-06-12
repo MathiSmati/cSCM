@@ -8,7 +8,7 @@ import java.util.Map;
 public class SCMBuilder {
 	
 	private LinkedHashMap<String, LinkedHashMap<String, Object>> datasets = new LinkedHashMap<>();
-	
+	private boolean isPrettyPrinting = false;
 	public SCMBuilder() {
 		
 	}
@@ -31,7 +31,11 @@ public class SCMBuilder {
 		datasets.put(""+(datasets.size()+1), t_hm); 
 	}
 	
-	
+	public SCMBuilder setPrettyPrinting(boolean prettyPrinting) {
+		this.isPrettyPrinting = prettyPrinting;
+		return this;
+	}
+
 	public SCMBuilder add(Map<String, Object> dataset) {
 		datasets.put(""+(datasets.size()+1), new LinkedHashMap<>(dataset));
 		return this;
@@ -95,11 +99,18 @@ public class SCMBuilder {
 				d_value = d_value.replaceAll("(?<!\\\\)(?:\\\\\\\\)*,", "\\,").replaceAll("(?<!\\\\)(?:\\\\\\\\)*:", "\\:").replaceAll("(?<!\\\\)(?:\\\\\\\\)*;", "\\;");
 				
 				temp = temp + d_key + ":" + d_value + ",";
+				if (isPrettyPrinting)
+					temp = temp + "\n";
 			}
-			if (temp.length() >= 1 && temp.charAt(temp.length()-1) == ',')
-			temp = temp.substring(0, temp.length() -1) + ";";
+			if (temp.length() >= 1 && temp.charAt(temp.length()-1) == ',') {
+				temp = temp.substring(0, temp.length() -1) + ";";
+				if (isPrettyPrinting)
+				temp = temp + "\n\n";
+			}
 			else{
 				temp = temp + ";";
+				if (isPrettyPrinting)
+					temp = temp + "\n\n";
 			}
 		}
 		return temp;
