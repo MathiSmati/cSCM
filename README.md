@@ -3,7 +3,7 @@
 |--|--|
 |Lincense|[![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/ctection/cSCM/blob/master/LICENSE)|
 |Support |[![Discord](https://img.shields.io/discord/554675435309629451?logo=discord)](https://discord.gg/eaZseHT2F7)|
-|Downloads|[![Github all releases](https://img.shields.io/github/downloads/ctection/cSCM/total.svg)](https://GitHub.com/ctection/CPermManager/releases/)|
+|Downloads|[![Github all releases](https://img.shields.io/github/downloads/ctection/cSCM/total.svg)](https://GitHub.com/ctection/cSCM/releases/)|
 |Build|![GitHub Workflow Status](https://img.shields.io/github/workflow/status/ctection/cSCM/Gradle)|
 ### Simple Collection Mapping (SCM) Parser
 
