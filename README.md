@@ -31,6 +31,7 @@ Using SCM instead of JSON can result in lower Memory Usage and Data Usage when t
 |Latest Github Release|[![GitHub release](https://img.shields.io/github/release/ctection/cSCM.svg)](https://GitHub.com/ctection/cSCM/releases/)|
 |Maven Central|[![Maven Central](https://img.shields.io/maven-central/v/com.ctection/cSCM?color=gree)](https://search.maven.org/artifact/com.ctection/cSCM/) |
 |Commits|![GitHub commits since latest release (by SemVer)](https://img.shields.io/github/commits-since/ctection/cSCM/1.1.0?color=gree&sort=date)|
+
 **Be sure to replace VERSION with the version shown above!**
 #### Maven
 ```XML
